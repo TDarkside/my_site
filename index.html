@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+  <script>
+    $( function() {
+      $( "#menu" ).menu();
+    } );
+    </script>
+    <style>
+    .ui-menu { width: 150px; }
+    #dragg1 { width: 150px; height: 150px; padding: 0.5em; }
+    #dragg2 { width: 150px; height: 150px; padding: 0.5em; }
+    body {
+    background:  linear-gradient(45deg, rgba(103, 0, 31, .8), rgba(34, 101, 163, .5)), url(https://html5book.ru/wp-content/uploads/2016/12/photo-8.jpg); 
+  background-size: cover;
+  .text {
+    text-align:  center;
+   }
+    </style>
+
+    <script>
+    $( function() {
+        $( "#dragg1" ).draggable({axis: "x"});
+        $( "#dragg2" ).draggable({axis: "y"});
+      } );
+      </script>
+      <script>
+        $( function() {
+          $( "#tabs" ).tabs();
+        } );
+        $(function() {
+$("#tabs").tabs({event:"mouseover"});
+        } );
+        </script>
+
+</head>
+<body>
+    <p>Date: <input type="text" id="datepicker"></p>
+    <ul id="menu">
+        <li class="ui-state-disabled"><div>Toys (n/a)</div></li>
+        <li><div>Books</div></li>
+        <li><div>Clothing</div></li>
+        <li><div>Electronics</div>
+          <ul>
+            <li class="ui-state-disabled"><div>Home Entertainment</div></li>
+            <li><div>Car Hifi</div></li>
+            <li><div>Utilities</div></li>
+          </ul>
+        </li>
+        <li><div>Movies</div></li>
+        <li><div>Music</div>
+          <ul>
+            <li><div>Rock</div>
+              <ul>
+                <li><div>Alternative</div></li>
+                <li><div>Classic</div></li>
+              </ul>
+            </li>
+            <li><div>Jazz</div>
+              <ul>
+                <li><div>Freejazz</div></li>
+                <li><div>Big Band</div></li>
+                <li><div>Modern</div></li>
+              </ul>
+            </li>
+            <li><div>Pop</div></li>
+          </ul>
+        </li>
+        <li class="ui-state-disabled"><div>Specials (n/a)</div></li>
+      </ul>
+
+      <div id="dragg1" class="ui-widget-content">
+        <p>Drag me around</p>
+
+      </div>
+      <div id="dragg2" class="ui-widget-content">
+        <p>Drag me around</p>
+
+      </div>
+      <div class="text"><h2>Что-то</h2></div>
+      <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">Bravl Stars</a></li>
+          <li><a href="#tabs-2">CS:GO</a></li>
+          <li><a href="#tabs-3">Apex Legens</a></li>
+          <li><a href="#tabs-4">Rust</a></li>
+        </ul>
+        <div id="tabs-1">
+          <p> игра для мобильных устройств в жанре MOBA, разработанная и изданная компанией Supercell. Глобальный релиз состоялся 12 декабря 2018 года. </p>
+        </div>
+        <div id="tabs-2">
+          <p> многопользовательская компьютерная игра, разработанная компаниями Valve и Hidden Path Entertainment. Выпуск игры для персональных компьютеров на операционных системах Windows и macOS, также игровых приставках Xbox 360 и PlayStation 3 состоялся 21 августа 2012 года. Версия игры для Linux была выпущена в 2014 году[1], а в 2016 году игра, в рамках программы обратной совместимости, стала доступна на Xbox One[3]. В сентябре 2018 года была выпущена бесплатная версия с возможностью игры с реальными игроками и с ботами. Позже, в декабре того же года игра стала полностью бесплатной[⇨].
+
+            Как и в остальных играх серии, в Counter-Strike: Global Offensive игроки делятся на две команды: террористов и подразделений специального назначения, после чего сражаются друг с другом в серии раундов, по результатам которых определяется команда-победитель. Игроку доступны разные режимы игры, меняющие условия поединка между командами, а также игра с ботами[⇨].</p>
+        </div>
+        <div id="tabs-3">
+          <p> компьютерная игра в жанре многопользовательского шутера от первого лица и королевской битвы, разработанная американской студией Respawn Entertainment и выпущенная компанией Electronic Arts для платформ Windows, PlayStation 4 и Xbox One в 2019 году. Действие Apex Legends происходит в той же самой вселенной, что и действие игр Titanfall и Titanfall 2; игра заимствует некоторые геймплейные механики из Titanfall 2. </p>
+          <p></p>
+        </div>
+        <div id="tabs-4">
+            <p> компьютерная игра в жанре симулятора выживания, была создана независимой британской студией Facepunch[1], возглавляемое c 2014 года Гарри Ньюмэном. Игра вышла на платформах Microsoft Windows и Мас. С декабря 2013 года игра находилась в раннем доступе. Выпуск игры состоялся 8 февраля 2018 года.</p>
+          </div>
+      </div>
+      
+</body>
+</html>
